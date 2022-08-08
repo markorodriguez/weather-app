@@ -4,7 +4,7 @@ import Spinner from "../components/Spinner";
 import Body from "../components/Body";
 
 import { useEffect, useState } from "react";
-import { ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
@@ -23,11 +23,9 @@ export default function Home() {
         <title>Weather App</title>
       </Head>
       <ToastContainer />
-      {showSpinner ? (
-        <Spinner />
-      ) : (
-        <Body />
-      )}
+
+      <Body />
+
     </div>
   );
 }
